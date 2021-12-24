@@ -8,7 +8,6 @@ from kivy.lang import Builder
 class Calculadora(App):
     def build(self):
         return Builder.load_string(KV)
-
     def operacion(self, data):
         try:
             self.root.pantalla.text = str(eval(data))
