@@ -26,7 +26,6 @@ KV = '''
 <FormaButton@Button>:
     font_size: self.width/3
     color: '#FFFFFF'
-
 GridLayout
     pantalla: entry
     rows: 6
