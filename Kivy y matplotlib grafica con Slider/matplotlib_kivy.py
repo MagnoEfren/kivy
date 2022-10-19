@@ -54,10 +54,4 @@ class Grafica(App):
         self.canvas.draw()        
         line.set_ydata(20)
 
-Grafica().run()
-
-
-
-
-
- 
+Grafica().run() 
