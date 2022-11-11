@@ -10,7 +10,7 @@ Interfaces graficas en Python realizadas con la librería Kivy
 <p align="left"> </p>
 
 <a href='https://youtu.be/ca7p46XM_CY' target='_blank'>
-  <img width='29%' src='https://github.com/MagnoEfren/kivy/blob/main/Calculadora/calculadora-en-kivy-android.png' alt='GUI' />
+  <img width='35%' src='https://github.com/MagnoEfren/kivy/blob/main/Calculadora/calculadora-en-kivy-android.png' alt='GUI' />
 </a>
 
 
@@ -20,7 +20,12 @@ Interfaces graficas en Python realizadas con la librería Kivy
   <img width='55%' src='https://github.com/MagnoEfren/kivy/blob/main/Kivy%20Garden%20Graph/captura.png' alt='GUI ' />
 </a>
 
- 
+ ### Calculadora modelo de Apple
+<p align="left"> </p>
+
+<a href='https://youtu.be/ca7p46XM_CY' target='_blank'>
+  <img width='35%' src='https://github.com/MagnoEfren/kivy/blob/main/Calculator%20Apple/screenshot.jpg' alt='GUI' />
+</a>
 
  
   
