@@ -10,7 +10,6 @@ from kivy.uix.button import Button
 from kivy.uix.label import Label
 from kivy.network.urlrequest import UrlRequest
 
-
 class TravelApp(App):
     def build(self):
         self.window = GridLayout()
@@ -18,8 +17,6 @@ class TravelApp(App):
         
         self.window.size_hint = (0.9,0.9)
         self.window.pos_hint = {'center_x':0.5, 'center_y':0.5}
-
-
         self.imagen = Image(source = 'logo.png')
 
         self.buscar = TextInput(
@@ -45,11 +42,8 @@ class TravelApp(App):
         self.window.add_widget(self.boton_buscar)
         self.window.add_widget(self.informacion)
         self.boton_buscar.bind(on_press = self.informacion_pais)
-
-
         return self.window
-    
-
+ 
     def informacion_pais(self, instance):
         def edit_label (request, result):
             data = result['names']['full']
@@ -57,14 +51,9 @@ class TravelApp(App):
         link = f'https://travelbriefing.org/{ self.buscar.text }?format=json'
         req = UrlRequest(url = link, on_success= edit_label)
    
-
-    #@staticmethod 
-
-
+   #@staticmethod 
 if __name__ == "__main__":
     TravelApp().run()
-
-
 
 '''            data = result     
             self.informacion.text = ('Nombre:  ' + data["names"]["full"] + '\n'
