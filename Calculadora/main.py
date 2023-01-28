@@ -1,7 +1,6 @@
 # @autor: Magno Efren
 # Youtube: https://www.youtube.com/c/MagnoEfren/videos
 # Calculadora Basica
-
 from kivy.app import App
 from kivy.lang import Builder
 
