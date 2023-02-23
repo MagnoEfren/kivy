@@ -1,0 +1,84 @@
+
+<Ui>:
+    MDScreen:
+        MDBoxLayout:
+            padding: [dp(12),dp(12),dp(12),dp(12)]
+            size_hint: 1,1
+            orientation: 'vertical'
+            MDBoxLayout:
+                padding: [dp(12),dp(12),dp(12),dp(12)]
+                size_hint: 1, 0.2
+                orientation: 'horizontal'
+                MDTextField:
+                    id: text_prompt
+                    hint_text: '¿Qué imagen deseas?'
+                MDFloatingActionButton:
+                    icon: 'send'
+                    on_release: app.generate_image()
+            MDBoxLayout:
+                orientation: 'horizontal'
+                size_hint: 1, 0.1
+                MDBoxLayout:
+                    orientation: 'horizontal'
+                    MDCheckbox:
+                        group: 'image_size'
+                        on_active: app.checkbox_size('256x256')
+                        active: False
+                    MDLabel:
+                        text: '256p'
+                MDBoxLayout:
+                    orientation: 'horizontal'
+                    MDCheckbox:
+                        group: 'image_size'
+                        on_active: app.checkbox_size('512x512')
+                        active: True
+                    MDLabel:
+                        text: '512p'
+                MDBoxLayout:
+                    orientation: 'horizontal'
+                    MDCheckbox:
+                        group: 'image_size'
+                        on_active: app.checkbox_size('1024x1024')
+                        active: False
+                    MDLabel:
+                        text: '1024p'
+            MDBoxLayout:
+                padding: [dp(12),dp(12),dp(12),dp(12)]
+                size_hint: 1, 0.7
+                orientation: 'horizontal'
+                ScrollView:
+                    MDGridLayout:
+                        cols: 1
+                        row_default_height: root.height*0.2
+                        size_hint: 1, None
+                        height: self.minimum_height
+                        AsyncImage:
+                            id: image_one
+                            size_hint: 1,None
+                            height: self.width/ self.image_ratio
+                            halign: 'center'
+                            source: ''
+                        MDIconButton:
+                            icon: 'download'
+                            md_bg_color:[0,0,0,0]
+                            on_release: app.download_image_one()
+                        AsyncImage:
+                            id: image_two
+                            size_hint: 1,None
+                            height: self.width/ self.image_ratio
+                            halign: 'center'
+                            source: ''
+                        MDIconButton:
+                            icon: 'download'
+                            md_bg_color:[0,0,0,0]
+                            on_release: app.download_image_two()
+                        AsyncImage:
+                            id: image_three
+                            size_hint: 1,None
+                            height: self.width/ self.image_ratio
+                            halign: 'center'
+                            source: ''
+                        MDIconButton:
+                            icon: 'download'
+                            md_bg_color:[0,0,0,0]
+                            on_release: app.download_image_three()
