@@ -91,6 +91,5 @@ class MainApp(MDApp):
 
     def checkbox_size(self, x):
         self.size_image = x
-
 if __name__ =="__main__":
     MainApp().run()
