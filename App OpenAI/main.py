@@ -7,7 +7,6 @@ from kivymd.uix.snackbar import Snackbar
 import urllib.request
 import openai # pip install openai
 import os
-
 Window.size = (350,500)
 
 class Ui(ScreenManager):
