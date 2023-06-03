@@ -5,6 +5,7 @@
 # instalar: garden install matplotlib 
 # Youtube: https://www.youtube.com/c/MagnoEfren
 
+
 from kivy.app import App
 from kivy.uix.slider import Slider
 from kivy.uix.boxlayout import BoxLayout
