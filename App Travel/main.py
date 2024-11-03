@@ -2,6 +2,7 @@
 # Youtube: https://www.youtube.com/c/MagnoEfren/videos
 #API https://travelbriefing.org/api
 
+
 from kivy.app import App
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.image import Image
